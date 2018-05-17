@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF5D635F20AD186C002E03FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D635E20AD186C002E03FC /* AppDelegate.m */; };
+		FF5D636220AD186C002E03FC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D636120AD186C002E03FC /* MasterViewController.m */; };
+		FF5D636520AD186C002E03FC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D636420AD186C002E03FC /* DetailViewController.m */; };
+		FF5D636820AD186C002E03FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5D636620AD186C002E03FC /* Main.storyboard */; };
+		FF5D636A20AD1871002E03FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5D636920AD1871002E03FC /* Assets.xcassets */; };
+		FF5D636D20AD1871002E03FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5D636B20AD1871002E03FC /* LaunchScreen.storyboard */; };
+		FF5D637020AD1871002E03FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D636F20AD1871002E03FC /* main.m */; };
+		FF5D637A20AD1871002E03FC /* SRFontTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D637920AD1871002E03FC /* SRFontTests.m */; };
+		FF5D638520AD1871002E03FC /* SRFontUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D638420AD1871002E03FC /* SRFontUITests.m */; };
+		FF5D639520AD19C0002E03FC /* UIFont+SRFontAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D639420AD19C0002E03FC /* UIFont+SRFontAdjust.m */; };
+		FF5D639820AD1B89002E03FC /* ChangeSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D639720AD1B89002E03FC /* ChangeSelector.m */; };
+		FF5D639B20AD29CB002E03FC /* UILabel+SRFontAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D639A20AD29CB002E03FC /* UILabel+SRFontAdjust.m */; };
+		FF5D639E20AD2BEF002E03FC /* UIButton+SRFontAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D639D20AD2BEF002E03FC /* UIButton+SRFontAdjust.m */; };
+		FF5D63A120AD3374002E03FC /* UITextField+SRFontAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D63A020AD3374002E03FC /* UITextField+SRFontAdjust.m */; };
+		FF5D63A420AD3403002E03FC /* UITextView+SRFontAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D63A320AD3403002E03FC /* UITextView+SRFontAdjust.m */; };
+		FF5D63A720AD52A6002E03FC /* SRFontAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D63A620AD52A6002E03FC /* SRFontAdjust.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF5D637620AD1871002E03FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5D635220AD186C002E03FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF5D635920AD186C002E03FC;
+			remoteInfo = SRFont;
+		};
+		FF5D638120AD1871002E03FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5D635220AD186C002E03FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF5D635920AD186C002E03FC;
+			remoteInfo = SRFont;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF5D635A20AD186C002E03FC /* SRFont.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRFont.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5D635D20AD186C002E03FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF5D635E20AD186C002E03FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF5D636020AD186C002E03FC /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		FF5D636120AD186C002E03FC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		FF5D636320AD186C002E03FC /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FF5D636420AD186C002E03FC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FF5D636720AD186C002E03FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF5D636920AD1871002E03FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF5D636C20AD1871002E03FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF5D636E20AD1871002E03FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5D636F20AD1871002E03FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF5D637520AD1871002E03FC /* SRFontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SRFontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5D637920AD1871002E03FC /* SRFontTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRFontTests.m; sourceTree = "<group>"; };
+		FF5D637B20AD1871002E03FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5D638020AD1871002E03FC /* SRFontUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SRFontUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5D638420AD1871002E03FC /* SRFontUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRFontUITests.m; sourceTree = "<group>"; };
+		FF5D638620AD1871002E03FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5D639320AD19C0002E03FC /* UIFont+SRFontAdjust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+SRFontAdjust.h"; sourceTree = "<group>"; };
+		FF5D639420AD19C0002E03FC /* UIFont+SRFontAdjust.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+SRFontAdjust.m"; sourceTree = "<group>"; };
+		FF5D639620AD1B89002E03FC /* ChangeSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeSelector.h; sourceTree = "<group>"; };
+		FF5D639720AD1B89002E03FC /* ChangeSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeSelector.m; sourceTree = "<group>"; };
+		FF5D639920AD29CB002E03FC /* UILabel+SRFontAdjust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+SRFontAdjust.h"; sourceTree = "<group>"; };
+		FF5D639A20AD29CB002E03FC /* UILabel+SRFontAdjust.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SRFontAdjust.m"; sourceTree = "<group>"; };
+		FF5D639C20AD2BEF002E03FC /* UIButton+SRFontAdjust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+SRFontAdjust.h"; sourceTree = "<group>"; };
+		FF5D639D20AD2BEF002E03FC /* UIButton+SRFontAdjust.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SRFontAdjust.m"; sourceTree = "<group>"; };
+		FF5D639F20AD3374002E03FC /* UITextField+SRFontAdjust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+SRFontAdjust.h"; sourceTree = "<group>"; };
+		FF5D63A020AD3374002E03FC /* UITextField+SRFontAdjust.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+SRFontAdjust.m"; sourceTree = "<group>"; };
+		FF5D63A220AD3403002E03FC /* UITextView+SRFontAdjust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+SRFontAdjust.h"; sourceTree = "<group>"; };
+		FF5D63A320AD3403002E03FC /* UITextView+SRFontAdjust.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+SRFontAdjust.m"; sourceTree = "<group>"; };
+		FF5D63A520AD52A6002E03FC /* SRFontAdjust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRFontAdjust.h; sourceTree = "<group>"; };
+		FF5D63A620AD52A6002E03FC /* SRFontAdjust.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRFontAdjust.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF5D635720AD186C002E03FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5D637220AD1871002E03FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5D637D20AD1871002E03FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF5D635120AD186C002E03FC = {
+			isa = PBXGroup;
+			children = (
+				FF5D635C20AD186C002E03FC /* SRFont */,
+				FF5D639220AD195F002E03FC /* SRFontAdjust */,
+				FF5D637820AD1871002E03FC /* SRFontTests */,
+				FF5D638320AD1871002E03FC /* SRFontUITests */,
+				FF5D635B20AD186C002E03FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF5D635B20AD186C002E03FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF5D635A20AD186C002E03FC /* SRFont.app */,
+				FF5D637520AD1871002E03FC /* SRFontTests.xctest */,
+				FF5D638020AD1871002E03FC /* SRFontUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF5D635C20AD186C002E03FC /* SRFont */ = {
+			isa = PBXGroup;
+			children = (
+				FF5D635D20AD186C002E03FC /* AppDelegate.h */,
+				FF5D635E20AD186C002E03FC /* AppDelegate.m */,
+				FF5D636020AD186C002E03FC /* MasterViewController.h */,
+				FF5D636120AD186C002E03FC /* MasterViewController.m */,
+				FF5D636320AD186C002E03FC /* DetailViewController.h */,
+				FF5D636420AD186C002E03FC /* DetailViewController.m */,
+				FF5D636620AD186C002E03FC /* Main.storyboard */,
+				FF5D636920AD1871002E03FC /* Assets.xcassets */,
+				FF5D636B20AD1871002E03FC /* LaunchScreen.storyboard */,
+				FF5D636E20AD1871002E03FC /* Info.plist */,
+				FF5D636F20AD1871002E03FC /* main.m */,
+			);
+			path = SRFont;
+			sourceTree = "<group>";
+		};
+		FF5D637820AD1871002E03FC /* SRFontTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF5D637920AD1871002E03FC /* SRFontTests.m */,
+				FF5D637B20AD1871002E03FC /* Info.plist */,
+			);
+			path = SRFontTests;
+			sourceTree = "<group>";
+		};
+		FF5D638320AD1871002E03FC /* SRFontUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF5D638420AD1871002E03FC /* SRFontUITests.m */,
+				FF5D638620AD1871002E03FC /* Info.plist */,
+			);
+			path = SRFontUITests;
+			sourceTree = "<group>";
+		};
+		FF5D639220AD195F002E03FC /* SRFontAdjust */ = {
+			isa = PBXGroup;
+			children = (
+				FF5D639620AD1B89002E03FC /* ChangeSelector.h */,
+				FF5D639720AD1B89002E03FC /* ChangeSelector.m */,
+				FF5D639320AD19C0002E03FC /* UIFont+SRFontAdjust.h */,
+				FF5D639420AD19C0002E03FC /* UIFont+SRFontAdjust.m */,
+				FF5D639920AD29CB002E03FC /* UILabel+SRFontAdjust.h */,
+				FF5D639A20AD29CB002E03FC /* UILabel+SRFontAdjust.m */,
+				FF5D639C20AD2BEF002E03FC /* UIButton+SRFontAdjust.h */,
+				FF5D639D20AD2BEF002E03FC /* UIButton+SRFontAdjust.m */,
+				FF5D639F20AD3374002E03FC /* UITextField+SRFontAdjust.h */,
+				FF5D63A020AD3374002E03FC /* UITextField+SRFontAdjust.m */,
+				FF5D63A220AD3403002E03FC /* UITextView+SRFontAdjust.h */,
+				FF5D63A320AD3403002E03FC /* UITextView+SRFontAdjust.m */,
+				FF5D63A520AD52A6002E03FC /* SRFontAdjust.h */,
+				FF5D63A620AD52A6002E03FC /* SRFontAdjust.m */,
+			);
+			path = SRFontAdjust;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF5D635920AD186C002E03FC /* SRFont */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF5D638920AD1871002E03FC /* Build configuration list for PBXNativeTarget "SRFont" */;
+			buildPhases = (
+				FF5D635620AD186C002E03FC /* Sources */,
+				FF5D635720AD186C002E03FC /* Frameworks */,
+				FF5D635820AD186C002E03FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SRFont;
+			productName = SRFont;
+			productReference = FF5D635A20AD186C002E03FC /* SRFont.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF5D637420AD1871002E03FC /* SRFontTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF5D638C20AD1871002E03FC /* Build configuration list for PBXNativeTarget "SRFontTests" */;
+			buildPhases = (
+				FF5D637120AD1871002E03FC /* Sources */,
+				FF5D637220AD1871002E03FC /* Frameworks */,
+				FF5D637320AD1871002E03FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF5D637720AD1871002E03FC /* PBXTargetDependency */,
+			);
+			name = SRFontTests;
+			productName = SRFontTests;
+			productReference = FF5D637520AD1871002E03FC /* SRFontTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF5D637F20AD1871002E03FC /* SRFontUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF5D638F20AD1871002E03FC /* Build configuration list for PBXNativeTarget "SRFontUITests" */;
+			buildPhases = (
+				FF5D637C20AD1871002E03FC /* Sources */,
+				FF5D637D20AD1871002E03FC /* Frameworks */,
+				FF5D637E20AD1871002E03FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF5D638220AD1871002E03FC /* PBXTargetDependency */,
+			);
+			name = SRFontUITests;
+			productName = SRFontUITests;
+			productReference = FF5D638020AD1871002E03FC /* SRFontUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF5D635220AD186C002E03FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = hlet;
+				TargetAttributes = {
+					FF5D635920AD186C002E03FC = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					FF5D637420AD1871002E03FC = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FF5D635920AD186C002E03FC;
+					};
+					FF5D637F20AD1871002E03FC = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FF5D635920AD186C002E03FC;
+					};
+				};
+			};
+			buildConfigurationList = FF5D635520AD186C002E03FC /* Build configuration list for PBXProject "SRFont" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF5D635120AD186C002E03FC;
+			productRefGroup = FF5D635B20AD186C002E03FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF5D635920AD186C002E03FC /* SRFont */,
+				FF5D637420AD1871002E03FC /* SRFontTests */,
+				FF5D637F20AD1871002E03FC /* SRFontUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF5D635820AD186C002E03FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5D636D20AD1871002E03FC /* LaunchScreen.storyboard in Resources */,
+				FF5D636A20AD1871002E03FC /* Assets.xcassets in Resources */,
+				FF5D636820AD186C002E03FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5D637320AD1871002E03FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5D637E20AD1871002E03FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF5D635620AD186C002E03FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5D639820AD1B89002E03FC /* ChangeSelector.m in Sources */,
+				FF5D639520AD19C0002E03FC /* UIFont+SRFontAdjust.m in Sources */,
+				FF5D639B20AD29CB002E03FC /* UILabel+SRFontAdjust.m in Sources */,
+				FF5D63A120AD3374002E03FC /* UITextField+SRFontAdjust.m in Sources */,
+				FF5D636220AD186C002E03FC /* MasterViewController.m in Sources */,
+				FF5D635F20AD186C002E03FC /* AppDelegate.m in Sources */,
+				FF5D63A720AD52A6002E03FC /* SRFontAdjust.m in Sources */,
+				FF5D637020AD1871002E03FC /* main.m in Sources */,
+				FF5D639E20AD2BEF002E03FC /* UIButton+SRFontAdjust.m in Sources */,
+				FF5D63A420AD3403002E03FC /* UITextView+SRFontAdjust.m in Sources */,
+				FF5D636520AD186C002E03FC /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5D637120AD1871002E03FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5D637A20AD1871002E03FC /* SRFontTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5D637C20AD1871002E03FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5D638520AD1871002E03FC /* SRFontUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF5D637720AD1871002E03FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF5D635920AD186C002E03FC /* SRFont */;
+			targetProxy = FF5D637620AD1871002E03FC /* PBXContainerItemProxy */;
+		};
+		FF5D638220AD1871002E03FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF5D635920AD186C002E03FC /* SRFont */;
+			targetProxy = FF5D638120AD1871002E03FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF5D636620AD186C002E03FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF5D636720AD186C002E03FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF5D636B20AD1871002E03FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF5D636C20AD1871002E03FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF5D638720AD1871002E03FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF5D638820AD1871002E03FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF5D638A20AD1871002E03FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN6K6JLYC4;
+				INFOPLIST_FILE = SRFont/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hletong.jppt.ship.SRFont;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF5D638B20AD1871002E03FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN6K6JLYC4;
+				INFOPLIST_FILE = SRFont/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hletong.jppt.ship.SRFont;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF5D638D20AD1871002E03FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN6K6JLYC4;
+				INFOPLIST_FILE = SRFontTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hletong.jppt.ship.SRFontTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SRFont.app/SRFont";
+			};
+			name = Debug;
+		};
+		FF5D638E20AD1871002E03FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN6K6JLYC4;
+				INFOPLIST_FILE = SRFontTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hletong.jppt.ship.SRFontTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SRFont.app/SRFont";
+			};
+			name = Release;
+		};
+		FF5D639020AD1871002E03FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN6K6JLYC4;
+				INFOPLIST_FILE = SRFontUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hletong.jppt.ship.SRFontUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SRFont;
+			};
+			name = Debug;
+		};
+		FF5D639120AD1871002E03FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MN6K6JLYC4;
+				INFOPLIST_FILE = SRFontUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hletong.jppt.ship.SRFontUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SRFont;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF5D635520AD186C002E03FC /* Build configuration list for PBXProject "SRFont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5D638720AD1871002E03FC /* Debug */,
+				FF5D638820AD1871002E03FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF5D638920AD1871002E03FC /* Build configuration list for PBXNativeTarget "SRFont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5D638A20AD1871002E03FC /* Debug */,
+				FF5D638B20AD1871002E03FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF5D638C20AD1871002E03FC /* Build configuration list for PBXNativeTarget "SRFontTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5D638D20AD1871002E03FC /* Debug */,
+				FF5D638E20AD1871002E03FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF5D638F20AD1871002E03FC /* Build configuration list for PBXNativeTarget "SRFontUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5D639020AD1871002E03FC /* Debug */,
+				FF5D639120AD1871002E03FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF5D635220AD186C002E03FC /* Project object */;
+}
