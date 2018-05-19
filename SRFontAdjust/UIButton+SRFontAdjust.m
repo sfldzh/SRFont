@@ -14,12 +14,12 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [ChangeSelector exchangeInstanceMethodWithClass:[self class] originalSelector:@selector(awakeFromNib) swizzledSelector:@selector(srAwakeFromNib)];
-        [ChangeSelector exchangeInstanceMethodWithClass:[self class] originalSelector:@selector(willMoveToSuperview:) swizzledSelector:@selector(srWillMoveToSuperview:)];
+        [ChangeSelector exchangeInstanceMethodWithClass:[self class] originalSelector:@selector(didMoveToSuperview) swizzledSelector:@selector(srDidMoveToSuperview)];
     });
 }
 
-- (void)srWillMoveToSuperview:(UIView *)superview{
-    [self srWillMoveToSuperview:superview];
+- (void)srDidMoveToSuperview{
+    [self srDidMoveToSuperview];
 }
 
 

@@ -24,16 +24,23 @@
 
 - (void)srDidMoveToSuperview{
     [self srDidMoveToSuperview];
-    if (self.isAddCheck == NO) {
-        self.isAddCheck = YES;
-        [[SRFontAdjust single] addObserver:self forKeyPath:@"fontMultiple" options:NSKeyValueObservingOptionNew context:nil];
+    if (![NSStringFromClass([self.superview class]) isEqualToString:@"_UINavigationBarContentView"] && ![NSStringFromClass([self.superview class]) isEqualToString:@"_UIModernBarButton"]) {
+        if (self.isAddCheck == NO) {
+            self.isAddCheck = YES;
+            [[SRFontAdjust single] addObserver:self forKeyPath:@"fontMultiple" options:NSKeyValueObservingOptionNew context:nil];
+        }
     }
 }
 
 - (void)srRemoveFromSuperview{
     [self srRemoveFromSuperview];
-    [[SRFontAdjust single] removeObserver:self forKeyPath:@"fontMultiple"];
-    self.isAddCheck = NO;
+    if (![NSStringFromClass([self.superview class]) isEqualToString:@"_UINavigationBarContentView"] && ![NSStringFromClass([self.superview class]) isEqualToString:@"_UIModernBarButton"]) {
+        if (self.isAddCheck == YES) {
+            [[SRFontAdjust single] removeObserver:self forKeyPath:@"fontMultiple"];
+            self.isAddCheck = NO;
+            self.originalFont = nil;
+        }
+    }
 }
 
 - (void)srAwakeFromNib{
@@ -44,7 +51,7 @@
 - (void)setSRFont:(UIFont *)font{
     [self setSRFont:font];
     if (self.isAdjust == NO) {
-        self.originalFont = font;
+        self.originalFont = [UIFont fontWithName:font.fontName size:(font.pointSize-([SRFontAdjust single].fontMultiple*2))];
     }else{
         self.isAdjust = NO;
     }
@@ -76,8 +83,8 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
     if ([keyPath isEqualToString:@"fontMultiple"]) {
-        self.font = [UIFont fontWithName:self.originalFont.fontName size:self.originalFont.pointSize+((SRFontAdjust *)object).fontMultiple];
         self.isAdjust = YES;
+        self.font = [UIFont fontWithName:self.originalFont.fontName size:self.originalFont.pointSize];
     }
 }
 

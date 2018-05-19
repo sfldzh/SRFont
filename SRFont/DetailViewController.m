@@ -10,6 +10,7 @@
 #import "SRFontAdjust.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UISlider *slider;
 
 @end
 
@@ -27,14 +28,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.slider.value = [SRFontAdjust single].fontMultiple;
     [self configureView];
+    
+    UILabel *contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 64, 200, 40)];
+    contentLabel.text = @"创建的Label";
+    contentLabel.font = [UIFont systemFontOfSize:14];
+    contentLabel.textColor = [UIColor blackColor];
+    [self.view addSubview:contentLabel];
 }
 
 - (IBAction)valueDidChange:(UISlider *)sender {
     [SRFontAdjust single].fontMultiple = sender.value;
-}
-- (IBAction)didClick:(UIButton *)sender {
-    [SRFontAdjust single].fontMultiple = 1.0f;
 }
 
 - (void)didReceiveMemoryWarning {

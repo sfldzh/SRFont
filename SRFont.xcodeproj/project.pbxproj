@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130D317A20AFA34E0029E80F /* UINavigationBar+SRFontAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 130D317920AFA34E0029E80F /* UINavigationBar+SRFontAdjust.m */; };
 		FF5D635F20AD186C002E03FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D635E20AD186C002E03FC /* AppDelegate.m */; };
 		FF5D636220AD186C002E03FC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D636120AD186C002E03FC /* MasterViewController.m */; };
 		FF5D636520AD186C002E03FC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D636420AD186C002E03FC /* DetailViewController.m */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		130D317820AFA34E0029E80F /* UINavigationBar+SRFontAdjust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+SRFontAdjust.h"; sourceTree = "<group>"; };
+		130D317920AFA34E0029E80F /* UINavigationBar+SRFontAdjust.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+SRFontAdjust.m"; sourceTree = "<group>"; };
 		FF5D635A20AD186C002E03FC /* SRFont.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRFont.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5D635D20AD186C002E03FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF5D635E20AD186C002E03FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				FF5D63A020AD3374002E03FC /* UITextField+SRFontAdjust.m */,
 				FF5D63A220AD3403002E03FC /* UITextView+SRFontAdjust.h */,
 				FF5D63A320AD3403002E03FC /* UITextView+SRFontAdjust.m */,
+				130D317820AFA34E0029E80F /* UINavigationBar+SRFontAdjust.h */,
+				130D317920AFA34E0029E80F /* UINavigationBar+SRFontAdjust.m */,
 				FF5D63A520AD52A6002E03FC /* SRFontAdjust.h */,
 				FF5D63A620AD52A6002E03FC /* SRFontAdjust.m */,
 			);
@@ -316,6 +321,7 @@
 				FF5D63A120AD3374002E03FC /* UITextField+SRFontAdjust.m in Sources */,
 				FF5D636220AD186C002E03FC /* MasterViewController.m in Sources */,
 				FF5D635F20AD186C002E03FC /* AppDelegate.m in Sources */,
+				130D317A20AFA34E0029E80F /* UINavigationBar+SRFontAdjust.m in Sources */,
 				FF5D63A720AD52A6002E03FC /* SRFontAdjust.m in Sources */,
 				FF5D637020AD1871002E03FC /* main.m in Sources */,
 				FF5D639E20AD2BEF002E03FC /* UIButton+SRFontAdjust.m in Sources */,
